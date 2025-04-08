@@ -20,7 +20,6 @@ func usage() {
 	fmt.Fprintf(os.Stderr, "  <epoch_time> Convert the given Unix epoch time (integer seconds) to local time.\n")
 	fmt.Fprintf(os.Stderr, "  @<beat_time> Convert the given Swatch Internet Time (0-999) to a local time range for the current day.\n")
 	fmt.Fprintf(os.Stderr, "  -h, --help   Show this help message.\n") // Added for clarity, flag pkg handles it
-	flag.PrintDefaults()                                               // Print flag package default help info
 	os.Exit(1)
 }
 
